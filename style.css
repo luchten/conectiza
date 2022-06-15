@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    background-image: url(images/header-background.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35vw;
+    height: 55%;
+    background-image: url(images/header-pattern-1.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 33vw;
+    height: 55%;
+    background-image: url(images/header-pattern-2.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-menu {
+    margin: 25px 10% 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-links {
+    display: flex;
+}
+
+.menu-links a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin: 0 0.5vw;
+    padding: 10px;
+}
+
+.contectiza-banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.contectiza-title {
+    color: white;
+}
+
+.contectiza-title h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.contectiza-title h2 {
+    font-size: 40px;
+    font-weight: 400;    
+}
+
+.contectiza-title p {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 150px;
+}
+
+.contectiza-title button {
+    background: linear-gradient(93.66deg, #AC424E 7.12%, #ED6D1D 98.32%);
+    border-radius: 25px;
+    padding: 13px 45px;
+    color: white;
+    border: none;
+}
