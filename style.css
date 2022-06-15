@@ -74,6 +74,10 @@ a {
     height: 100%;
 }
 
+.img-fluid {
+    min-width: 350px;
+}
+
 .contectiza-title {
     color: white;
 }
@@ -92,7 +96,7 @@ a {
     margin: 30px 0;
     font-size: 20px;
     font-weight: 400;
-    padding-right: 150px;
+    padding-right: 100px;
 }
 
 .contectiza-title button {
