@@ -21,6 +21,7 @@ a {
     background-size: cover;
     background-position: center;
     padding-bottom: 50px;
+    min-height: 80vh;
 }
 
 .header::before {
@@ -57,6 +58,7 @@ a {
 
 .menu-links {
     display: flex;
+    margin-left: 60px;
 }
 
 .menu-links a {
@@ -105,4 +107,10 @@ a {
     padding: 13px 45px;
     color: white;
     border: none;
+}
+
+@media (max-width: 920px) {
+    .menu-links {
+        flex-direction: column;
+    }
 }
