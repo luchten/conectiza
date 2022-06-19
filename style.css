@@ -109,6 +109,147 @@ a {
     border: none;
 }
 
+h1.solucoes {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 100px 0;
+}
+
+.solucao-card h1 {
+    font-weight: 700;
+    font-size: 28px; 
+    margin: 25px 0;   
+}
+
+.solucao-card p {
+    font-size: 16px;
+    color: #808080;
+    padding: 0 30px;
+}
+
+.solicitar {
+    display: flex;
+    align-items: center;    
+    margin: 100px 0;
+    padding: 50px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 25px;
+}
+
+.solicitar h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.solicitar p {
+    font-size: 20px;
+    font-weight: 500;   
+}
+
+.solicitar button {
+    background: linear-gradient(93.66deg, #E8481D 7.12%, #ED6D1D 98.32%);
+    border-radius: 100px;
+    font-size: 18px;
+    color: white;
+    border: none;    
+    padding: 25px 45px;
+    margin-left: 100px; 
+    white-space: nowrap;   
+}
+
+.vtex {
+    background: linear-gradient(92.74deg, #2B8836 0.26%, #7ABA48 101.3%, rgba(217, 217, 217, 0) 101.31%);
+    position: relative;
+    padding: 100px 0;  
+}
+
+.vtex::before {
+    content: '';
+    position: absolute;
+    background-image: url(images/vtex-pattern-1.svg);
+    bottom: 0;
+    left: 0;
+    width: 27vw;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+
+.vtex::after {
+    content: '';
+    position: absolute;
+    background-image: url(images/vtex-pattern-2.svg);
+    background-size: cover;
+    background-position: center;
+    width: 27vw;
+    height: 90%;
+    top: 0;
+    right: 0;
+}
+
+.vtex h1 {
+    font-size: 28px;
+    color: white;
+    margin: 50px 0;    
+}
+
+.vtex button {
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    padding: 35px 60px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+.headless {
+    margin: 75px 0;
+    display: flex;
+    align-items: center;
+}
+
+.headless h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.headless p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.headless img {
+    margin-left: 100px;
+}
+
+.headless-card {
+    padding: 30px;
+    background: #F2F2F2;
+    border-radius: 25px;
+}
+
+.headless-card p {
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.headless-card img {
+    margin-bottom: 20px;
+}
+
+.headless-info p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;    
+}
+
+.marcas {
+    display: flex;
+    justify-content: space-around;
+    margin: 75px 0;
+}
+
 @media (max-width: 920px) {
     .menu-links {
         flex-direction: column;
