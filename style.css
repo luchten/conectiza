@@ -109,6 +109,10 @@ a {
     border: none;
 }
 
+.dash {
+    color: #EAE9E9;
+}
+
 h1.solucoes {
     font-size: 38px;
     font-weight: 500;
@@ -248,6 +252,131 @@ h1.solucoes {
     display: flex;
     justify-content: space-around;
     margin: 75px 0;
+}
+
+.contato {
+    padding: 100px 0;
+}
+
+.contato-title h1 {
+    font-size: 64px;
+    color: white;
+    font-weight: 700;
+}
+
+.contato-title {
+    margin-bottom: 50px;
+}
+
+.contato-title p {
+    font-size: 36px;
+    color: white;    
+}
+
+.contato-title h1 span {
+    color: #FF5122;
+}
+
+.contato-input input {
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;   
+    color: white;   
+}
+
+.contato-input input::placeholder {
+    color: white;
+}
+
+.contato-input button {
+    color: #E8481D;
+    font-size: 20px;
+    float: right;
+    border: none;
+    padding: 25px 100px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.contato {
+    background-color: #E8481D;
+}
+
+#nome {
+    width: 100%;
+}
+
+#email {
+    margin-right: 30px;
+    min-width: 60%;
+}
+
+#tel {
+    width: 100%;   
+}
+
+#mensagem {
+    width: 100%; 
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+}
+
+#mensagem::placeholder {
+    color: white;
+}
+
+.email-tel {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.contato-info div {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.contato-info h1 {
+    font-size: 32px;
+    color: white;
+    margin-left: 20px;
+}
+
+.footer-card-item h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-card-item a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+    color: black;
+}
+
+.footer-card-item {
+    margin-right: 100px;    
+}
+
+.footer-cards {
+    margin-top: 50px;
+    display: flex;
+}
+
+footer {
+    padding: 30px 0;
+    border-top: 1px solid #F2F2F2;
+}
+
+footer h6 {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 @media (max-width: 920px) {
