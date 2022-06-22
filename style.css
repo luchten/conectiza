@@ -5,6 +5,10 @@
     font-family: 'Mulish', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -207,12 +211,6 @@ h1.solucoes {
     font-size: 18px;
 }
 
-.headless {
-    margin: 75px 0;
-    display: flex;
-    align-items: center;
-}
-
 .headless h1 {
     font-size: 64px;
     font-weight: 700;
@@ -221,10 +219,6 @@ h1.solucoes {
 .headless p {
     font-size: 20px;
     font-weight: 500;
-}
-
-.headless img {
-    margin-left: 100px;
 }
 
 .headless-card {
@@ -246,12 +240,6 @@ h1.solucoes {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.25;    
-}
-
-.marcas {
-    display: flex;
-    justify-content: space-around;
-    margin: 75px 0;
 }
 
 .contato {
@@ -360,23 +348,33 @@ h1.solucoes {
     color: black;
 }
 
-.footer-card-item {
-    margin-right: 100px;    
-}
-
-.footer-cards {
-    margin-top: 50px;
-    display: flex;
-}
-
 footer {
     padding: 30px 0;
-    border-top: 1px solid #F2F2F2;
+    border-top: 1px solid rgb(230, 230, 230);
 }
 
 footer h6 {
     font-size: 20px;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .solicitar {
+        flex-direction: column;        
+        padding: 50px 25px;
+    }
+
+    .solicitar button {
+        margin-left: 0;
+    }
+
+    .solicitar div {
+        text-align: center;
+    }
+
+    .solicitar p {
+        margin: 30px 0;
+    }    
 }
 
 @media (max-width: 920px) {
