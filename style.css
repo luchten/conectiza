@@ -56,13 +56,14 @@ a {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
 }
 
 .menu-links {
     display: flex;
     margin-left: 60px;
     transition: 0.25s;
+    z-index: 2;
 }
 
 .menu-links a {
@@ -102,32 +103,32 @@ a {
     height: 100%;
 }
 
-.contectiza-banner img {
+.conectiza-banner img {
     min-width: 350px;
 }
 
-.contectiza-title {
+.conectiza-title {
     color: white;
 }
 
-.contectiza-title h1 {
+.conectiza-title h1 {
     font-size: 60px;
     font-weight: 700;
 }
 
-.contectiza-title h2 {
+.conectiza-title h2 {
     font-size: 40px;
     font-weight: 400;    
 }
 
-.contectiza-title p {
+.conectiza-title p {
     margin: 30px 0;
     font-size: 20px;
     font-weight: 400;
     padding-right: 100px;
 }
 
-.contectiza-title button {
+.conectiza-title button {
     background: linear-gradient(93.66deg, #AC424E 7.12%, #ED6D1D 98.32%);
     border-radius: 25px;
     padding: 13px 45px;
@@ -388,6 +389,61 @@ footer h6 {
     font-weight: 500;
 }
 
+@media (max-width: 420px) {
+    .contato-info h1 {        
+        font-size: 22px !important;
+    }
+
+    .conectiza-title h1 {
+        font-size: 50px;
+    }
+
+    .conectiza-title h2 {
+        font-size: 30px;
+    }
+
+    .conectiza-title p {
+        padding-right: 50px;
+        font-size: 16px;
+    }
+
+    .headless h1 {
+        font-size: 50px;
+    }
+
+    .headless p {
+        font-size: 16px;
+    }
+
+    .contato-title h1 {
+        font-size: 50px;
+    }
+
+    .contato-title p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato-info h1 {
+        font-size: 27px;
+    }
+
+    .email-tel {
+        flex-wrap: wrap;
+    }
+
+    #email {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .vtex button {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .solicitar {
         flex-direction: column;        
@@ -419,7 +475,7 @@ footer h6 {
         padding-top: 250px;
         background: linear-gradient(102.71deg, #5E3391 24.22%, rgba(154, 90, 228, 0) 93.8%), #5128C1;        
         align-items: center;
-        z-index: 1;
+        z-index: 1;        
     }
 
     .toggle-button {
@@ -428,6 +484,7 @@ footer h6 {
 
     .menu-links-show {
         transform: translateX(0);
+        box-shadow: -1px 0 25px;
     }
 
     .button-fixed {
