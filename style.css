@@ -72,12 +72,28 @@ a {
     font-size: 18px;
     margin: 0 0.5vw;
     padding: 10px;
+    position: relative;
+}
+
+.menu-links a::after {
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 2px;
+    width: 0;
+    bottom: 10px;
+    left: 10%;
+    transition: 0.25s;
+}
+
+.menu-links a:hover::after {
+    width: 80%;
 }
 
 .toggle-button {
     display: none;
     position: absolute;
-    right: 10%;
+    right: 65px;
     cursor: pointer;
     padding: 10px;
     z-index: 1;
@@ -87,6 +103,7 @@ a {
     width: 32px;
     height: 3px;
     background-color: white;
+    transition: 0.25s;
 }
 
 .bar2 {
@@ -94,6 +111,7 @@ a {
     height: 3px;
     background-color: white;
     margin: 7px 0;
+    transition: 0.25s;
 }
 
 .conectiza-banner {
@@ -128,12 +146,17 @@ a {
     padding-right: 100px;
 }
 
-.conectiza-title button {
+.my-button {
     background: linear-gradient(93.66deg, #AC424E 7.12%, #ED6D1D 98.32%);
     border-radius: 25px;
     padding: 13px 45px;
     color: white;
-    border: none;
+    border: none;    
+    transition: 0.5s;
+}
+
+.my-button:hover {
+    filter: brightness(80%);
 }
 
 .dash {
@@ -152,6 +175,16 @@ h1.solucoes {
     font-size: 38px;
     font-weight: 500;
     margin-bottom: 115px;
+}
+
+.solucao-card {
+    border-radius: 20px;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+
+.solucao-card:hover {
+    box-shadow: 1px 1px 50px rgb(230, 230, 230);
 }
 
 .solucao-card h1 {
@@ -185,6 +218,10 @@ h1.solucoes {
     font-weight: 500;   
 }
 
+.solicitar button:hover {
+    filter: brightness(80%);
+}
+
 .solicitar button {
     background: linear-gradient(93.66deg, #E8481D 7.12%, #ED6D1D 98.32%);
     border-radius: 100px;
@@ -193,7 +230,8 @@ h1.solucoes {
     border: none;    
     padding: 25px 45px;
     margin-left: 100px; 
-    white-space: nowrap;   
+    white-space: nowrap;    
+    transition: 0.5s;
 }
 
 .vtex {
@@ -240,6 +278,7 @@ h1.solucoes {
     background-color: transparent;
     color: white;
     font-size: 18px;
+    transition: 0.25s;    
 }
 
 .headless h1 {
@@ -270,7 +309,15 @@ h1.solucoes {
 .headless-info p {
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.25;    
+    line-height: 1.25    
+}
+
+.marcas {
+    transition: 0.5s;
+}
+
+.marcas:hover {
+    transform: scale(1.25);
 }
 
 .contato {
@@ -316,6 +363,11 @@ h1.solucoes {
     padding: 25px 100px;
     font-weight: 700;
     margin-top: 30px;
+    transition: 0.5s;
+}
+
+.contato-input button:hover {
+    filter: brightness(80%);
 }
 
 .contato {
@@ -377,6 +429,11 @@ h1.solucoes {
     font-weight: 500;
     line-height: 2;
     color: black;
+    transition: 0.5s;
+}
+
+.footer-card-item a:hover {
+    text-shadow: 1px 1px 5px rgb(150, 150, 150);
 }
 
 footer {
@@ -420,7 +477,7 @@ footer h6 {
     }
 
     .contato-title p {
-        font-size: 25px;
+        font-size: 25px;        
     }
 }
 
@@ -484,7 +541,7 @@ footer h6 {
 
     .menu-links-show {
         transform: translateX(0);
-        box-shadow: -1px 0 25px;
+        box-shadow: -1px 0 20px;
     }
 
     .button-fixed {
